@@ -1,0 +1,106 @@
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 950px;
+    
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    /* Basic style for the h1 */
+
+  text-align: center;           /* Center the text */
+    padding: 50px 0;              /* Optional: Add some vertical padding */
+    margin: 0;                    /* Remove default margin */
+    
+    
+        text-align: center;
+        padding: 50px 0;
+        margin: 0;
+    
+        color:rgb(73, 48, 2);
+        font-size: 2em;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    h1:hover {
+        transform: translateY(-10px);  /* Move the text up */
+    }
+    
+    h1:hover {
+        animation: bounce 0.5s ease-in-out infinite; /* Bounce effect */
+    }
+    
+    /* Define the bounce animation */
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-15px); /* Bouncing upwards */
+        }
+        100% {
+            transform: translateY(0); /* Back to original position */
+        }
+    }
+    
+    h1 span {
+        display: inline-block;
+    }
+    
+    
+
+
+
+
+
+
+
+/* Navigation styles */
+nav {
+    
+    padding: 10px 0;
+}
+
+/* Flexbox for centering the menu */
+.menu {
+    display: flex;                /* Use flexbox */
+    justify-content: center;      /* Center the items horizontally */
+    align-items: center;          /* Center the items vertically */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;                /* Make the list items appear in a row */
+}
+
+.menu ul li {
+    margin-right: 45px;           /* Add some space between the links */
+}
+
+.menu ul li:last-child {
+    margin-right: 0;              /* Remove margin from the last item */
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: blue;
+    border-radius: 4px;
+    
+}
